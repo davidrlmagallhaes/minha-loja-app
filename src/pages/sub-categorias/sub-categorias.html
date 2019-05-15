@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ subCategorias.descricao }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-icon>
+    <button
+      (click)="itemClicked(item)"
+      ion-item
+      *ngFor="let item of subCategorias.subCategorias"
+    >
+      {{ item.descricao }}
+    </button>
+  </ion-icon>
+</ion-content>

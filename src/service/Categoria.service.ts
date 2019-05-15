@@ -10,7 +10,7 @@ export class CategoriaService {
     constructor(public http: HttpClient){
     }
     findAll() : Observable<Categoria[]> {
-      return this.http.get<Categoria[]>(`${API_CONFIG.baseUrl}/usuarios` )
+      return this.http.get<Categoria[]>(`${API_CONFIG.baseUrl}/categorias` )
     }
 
 }

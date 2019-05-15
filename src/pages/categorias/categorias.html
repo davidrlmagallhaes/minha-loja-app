@@ -8,5 +8,9 @@
 </ion-header>
 
 <ion-content padding>
-<p>tra tra tra Categorias</p>
+  <ion-icon>
+    <button (click)="itemClicked(item)" ion-item *ngFor="let item of categorias" >
+      {{ item.descricao }}
+    </button>
+  </ion-icon>
 </ion-content>
