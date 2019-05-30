@@ -5,15 +5,14 @@
 // roboto, and noto sans fonts
 $font-path: "../assets/fonts";
 
-
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
 $app-direction: ltr;
 
+// $toolbar-background : #535555;
 
 @import "ionic.globals";
-
 
 // Shared Variables
 // --------------------------------------------------
@@ -21,9 +20,6 @@ $app-direction: ltr;
 // the Sass variables found in Ionic's source scss files.
 // To view all the possible Ionic variables, see:
 // http://ionicframework.com/docs/theming/overriding-ionic-variables/
-
-
-
 
 // Named Color Variables
 // --------------------------------------------------
@@ -34,34 +30,75 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
-);
+  
 
+
+  white: #ffffff,  
+
+  light-vivid-blue: #2975ff,
+  vivid-blue: #1f26fd,
+  vivid-red: #ff3127,
+  grayish-red: #bea2a1,
+  mostly-desaturated-dark-blue: #546687,
+
+  light-grayish-blue: #E1E6FE,
+  very-soft-blue: #BBC5F5,
+  very-soft-blue-dark: #ACB6ED,  
+
+  primary: #a6b8d6,
+  secondary: #32db64,
+  danger: #f53d3d,
+  light: #f4f4f4,
+  dark: #222);
+
+$gradient: linear-gradient(to bottom right, color($colors, light-grayish-blue) 30%, color($colors, very-soft-blue-dark) 80%);
+$background-color: darken(color($colors, white), 5%);
 
 // App iOS Variables
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
-
-
-
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
 
+$card-md-background-color: $gradient;//color($colors, very-soft-blue);
+$card-md-text-color: color($colors, dark);
+$card-md-header-color: color($colors, dark);
+$card-md-header-font-size: 14px;
+$card-md-border-radius: 5px;
+$card-md-box-shadow: 0 0 0 1px lighten(color($colors, light-grayish-blue), 4%);
 
+//$list-md-background-color: color($colors, light-grayish-blue);
+//$list-md-activated-background-color: lighten(color($colors, light-grayish-blue), 4%);
+$list-md-header-calor: color($colors, dark);
+$list-md-text-color: color($colors, dark);
 
+$item-md-paragraph-text-color: lighten(color($colors, dark), 30%);
+// ion-item{
+//   background-color: color($colors, very-soft-blue);
+//   border-radius: 10px;
+//   box-shadow:  0 0 0 1px lighten(color($colors, light-grayish-blue), 4%);  
+// }
+// button{
+//   border-radius: 10px;  
+// }
+
+$label-md-text-color: color($colors, dark);
+
+$text-input-md-background-color: color($colors, dark);
+$text-input-md-input-clear-icon-color: color($colors, dark);
+//$text-input-md-margin-botton: 2rem;
+$text-input-md-highlight-color-valid: transparent;
+$text-input-md-highlight-color-invalid: transparent;
+
+$toolbar-md-padding: 20px 0;
+$toolbar-md-background: $background-color;
+$toolbar-md-border-color: $background-color;
 
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
-
-
-
 
 // App Theme
 // --------------------------------------------------
@@ -72,14 +109,12 @@ $colors: (
 
 @import "ionic.theme.default";
 
-
 // Ionicons
 // --------------------------------------------------
 // The premium icon font for Ionic. For more info, please see:
 // http://ionicframework.com/docs/ionicons/
 
 @import "ionic.ionicons";
-
 
 // Fonts
 // --------------------------------------------------

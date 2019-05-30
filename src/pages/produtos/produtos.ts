@@ -29,4 +29,9 @@ export class ProdutosPage {
           console.log(error);
         });
   }
+
+  itemClicked(item):void {
+    this.navCtrl.push('ProdutoPage',item);
+  }
+
 }

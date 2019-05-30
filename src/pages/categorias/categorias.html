@@ -9,7 +9,7 @@
 
 <ion-content padding>
   <ion-list no-lines>
-    <button (click)="itemClicked(item)" ion-item *ngFor="let item of categorias" >
+    <button (click)="itemClicked(item)" ion-button *ngFor="let item of categorias; let odd = odd" [color]="odd ? 'light-vivid-blue' : 'grayish-red'">
       {{ item.descricao }}
     </button>
   </ion-list>

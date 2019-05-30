@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Detalhes do produto</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card>
+    <img src="assets/imgs/logo.png" />
+  </ion-card>
+  <h2 class="prod">{{ produto.nome }}</h2>
+
+  <h3 class="valor">{{ produto.preco | currency: "BRL" }}</h3>
+  <p></p>
+  <p></p>
+  <h6>Especificações</h6>
+  <ion-list>
+    <ion-item *ngFor="let item of produto.especificacaoprodutos">
+      <h2>{{ item.titulo }} - {{ item.descricao }}</h2>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab right botton>
+    <button ion-fab mini class="btnBuy">
+      <ion-icon name="cart"  alt="Comprar"></ion-icon>
+    </button>
+    <button ion-fab mini class="btnLike">
+      <ion-icon name="heart" alt="Lista de desejos"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>

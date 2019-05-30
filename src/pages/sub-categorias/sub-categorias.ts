@@ -27,7 +27,6 @@ export class SubCategoriasPage {
       this.navCtrl.push('SubCategoriasPage',item);
     else
       this.navCtrl.push('ProdutosPage',item);
-    //console.log(item.subCategorias);
   }
 
 }

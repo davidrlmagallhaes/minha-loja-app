@@ -1,0 +1,29 @@
+page-produto {
+  h2{
+    text-align: center;
+  }
+  h6{
+    color: rgb(173, 65, 22);
+  }
+  img {
+    width: 200px;
+    align-self: center;
+    margin: auto;
+    display: block;
+    padding: 10x;
+  }
+  .prod{
+    color:dimgray;
+    text-align: center
+  }
+  .valor{
+    color:forestgreen;
+    text-align: center
+  }
+  .btnBuy{
+    background-color:color($colors, vivid-blue);
+  }
+  .btnLike{
+    background-color:color($colors, vivid-red);
+  }  
+}

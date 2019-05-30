@@ -1,19 +1,20 @@
-<ion-content padding>
+<ion-content padding class="bg">
   <h3>Petra Store</h3>
-
-  <img src="assets/imgs/tela-inicial.png" alt="logo">
-
-  <form >
-    <ion-item>
-      <ion-label stacked>Email</ion-label>
-      <ion-input type="email"></ion-input>
-    </ion-item>
-    <ion-item>
+  <ion-card>
+    <img src="assets/imgs/tela-inicial.png" alt="logo" />
+  </ion-card>
+  <form #form="ngForm" novalidate>
+    <!-- <ion-list>      
+      <ion-item> -->
+        <ion-label stacked>E-mail</ion-label>
+        <ion-input type="text"></ion-input>
+      <!-- </ion-item>
+      <ion-item > -->
         <ion-label stacked>Senha</ion-label>
-        <ion-input type="password"></ion-input>
-    </ion-item>
+        <ion-input type="password" #senha></ion-input>
+      <!-- </ion-item>    
+    </ion-list> -->
     <button ion-button block (click)="login()">Entrar</button>
   </form>
   <button ion-button block outline>Registrar</button>
-
 </ion-content>
